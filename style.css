@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    padding: 0 9.75rem;
+    background-color: #02A28F;
+    height: 4.3rem;
+    display: flex;
+    align-items: center;
+}
+
+header>h1 {
+    color: #FFF;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+#container {
+    padding: 0 9.75rem;
+    margin-top: 3.125rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#container>article {
+    width: 60%;
+    height: 24.75rem;
+    background-image: linear-gradient(180deg, rgba(102, 102, 102, 0) 0%, #000000 100%), url(./assets/article.jpeg);
+    background-size: cover;
+    border-radius: .6rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0px 10px 20px 0px #0000001A;
+}
+
+#category {
+    color: #fff;
+    font-weight: 400;
+}
+
+#title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+#subtitle {
+    color: #fff;
+    font-weight: 500;
+}
+
+#subtitle>strong {
+    font-weight: 700;
+}
+
+#container>aside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.header-aside {
+    width: 100%;
+    height: 3rem;
+    border-radius: .6rem;
+    background-color: #02A28F;
+    padding: .75rem 1.5rem;
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0px 10px 10px 0px #0000001A;
+}
+
+.card {
+    border-radius: .6rem;
+    box-shadow: 0px 10px 10px 0px #0000001A;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    padding: .75rem;
+    gap: .75rem;
+}
+
+.title-card {
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.subtitle-card {
+    font-weight: 500;
+    font-size: .75rem;
+}
+
+#grid-and-categories {
+    margin-top: 1.5rem;
+    padding: 0 9.75rem;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+#header-and-grid {
+    width: 60%;
+}
+
+#header-grid {
+    background-color: #02A28F;
+    width: 100%;
+    height: 3.5rem;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#title-header {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+#link {
+    text-decoration: underline;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+#content-grid {
+    margin-top: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.card-grid {
+    box-shadow: 0px 10px 20px 0px #0000001A;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.card-grid>div {
+    padding: 1rem;
+}
+
+.card-grid>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#category-card {
+    font-weight: 400;
+    font-size: .875rem;
+    color: #02A28F;
+    margin-bottom: .5rem;
+}
+
+#title-card-grid {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+#author {
+    font-weight: 500;
+    color: #616161;
+    font-size: .875rem;
+    margin-bottom: .5rem;
+}
+
+#text-card {
+    font-size: .875rem;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    color: #000000;
+}
+
+#date-news {
+    font-weight: 500;
+    color: #616161;
+    font-size: .875rem;
+}
+
+#categories {
+    width: 30%;
+}
+
+.category-and-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .875rem 0;
+}
+
+.category-and-quantity>p {
+    font-weight: 600;
+    color: #616161;
+}
+
+footer {
+    width: 100%;
+    height: 3rem;
+    background-color: #02A28F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#post-moobile {
+    display: none;
+}
+
+.header-aside-mobile {
+    display: none;
+}
+
+.card-mobile {
+    display: none;
+}
+
+#categories-mobile {
+    display: none;
+}
+
+.header-aside-mobile {
+    display: none;
+}
+
+.category-and-quantity-mobile {
+    display: none;
+}
+
+footer>p {
+    font-weight: 600;
+    color: #FFF;
+    font-size: .875rem;
+}
+
+@media screen and (max-width:1300px) {
+    .card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card>img {
+        max-height: 4rem;
+        object-fit: cover;
+        border-radius: .6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header>h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    #container {
+        padding: 0 .5rem;
+        gap: 0;
+        margin-top: 1.5rem;
+    }
+
+    #container>article {
+        width: 97%;
+
+    }
+
+    #container>aside {
+        display: none;
+    }
+
+    #title {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    #grid-and-categories {
+        padding: 0 .5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #header-and-grid {
+        width: 97%;
+    }
+
+    #categories {
+        display: none;
+    }
+
+    #content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #header-grid {
+        height: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #post-mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 0 .5rem;
+    }
+
+    .header-aside-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        width: 97%;
+        border-radius: .6rem;
+        background-color: #02A28F;
+        margin-bottom: 1.5rem;
+        font-size: 1.25rem;
+        color: #fff;
+        font-weight: 700;
+        box-shadow: 0px 10px 10px 0px #0000001A;
+    }
+
+    .card-mobile {
+        border-radius: .6rem;
+        box-shadow: 0px 10px 10px 0px #0000001A;
+        width: 97%;
+        height: 6rem;
+        display: flex;
+        padding: .75rem;
+        gap: .75rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .title-card-mobile {
+        font-size: .8rem;
+        font-weight: 700;
+    }
+    
+    .subtitle-card-mobile {
+        font-weight: 500;
+        font-size: .75rem;
+    }
+
+    #categories-mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 0 .5rem;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .category-and-quantity-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: .875rem 0;
+        width: 97%;
+    }
+    
+    .category-and-quantity-mobile > p {
+        font-weight: 600;
+        color: #616161;
+    }
+}
