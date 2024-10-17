@@ -1,4 +1,4 @@
-<h1>DESAFIO 02 - RESPONSIVIDADE</h1>
+<h1>BLOG COM RESPONSIVIDADE</h1>
 
 <h4>Segue link com deploy:</h4>
 
